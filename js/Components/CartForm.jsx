@@ -64,7 +64,7 @@ class CartForm extends React.Component {
         fetch(config.apiUrl + '/createOrderFromCart', {
           method: 'POST',
           body: JSON.stringify({
-            cartId: this.props.params.items
+            cartId: this.props.params.id
           })
         })
         .then(response => response.json())
@@ -72,13 +72,13 @@ class CartForm extends React.Component {
           this.setState({
             sent: true
           })
+          localStorage.setItem('cart', responseJson['cartId'])
           let inter = setInterval(() =>{
             this.setState({
               timeToRedirect: this.state.timeToRedirect -1
             },()=>{
               if(this.state.timeToRedirect === 0) {
                 clearInterval(inter)
-                localStorage.removeItem('cart')
                 hashHistory.push('/')
               }
             })

@@ -5,7 +5,6 @@ import {Link, IndexLink} from 'react-router'
 
 class Template extends React.Component{
   componentDidMount() {
-    localStorage.removeItem('cart')
       if (!localStorage.getItem('cart')) { // localStorage jest obiektem, ktory ma funkcje getItem, i tam szuka 'cart'
           fetch(config.apiUrl + '/createCart')
               .then(response => response.json())
