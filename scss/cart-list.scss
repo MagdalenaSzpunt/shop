@@ -1,0 +1,22 @@
+.productSum {
+    font-weight: 900;
+}
+
+.totalSum {
+    margin-right: 2vw;
+}
+
+@media ( min-width: 961px) {
+  .productSum {
+      float: right;
+  }
+
+  .totalSum {
+      float: right;
+          font-size: 24px;
+  }
+
+  .sum {
+      float: right;
+  }
+}

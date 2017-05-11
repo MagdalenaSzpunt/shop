@@ -1,0 +1,46 @@
+.product-images {
+  margin-bottom: 100px;
+  li {
+    list-style: none; // usuwa kropki z listy
+    display: inline-block;
+    margin-left: 20px;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.product-info {
+    float: right;
+    hr {
+      border: 2px ridge crimson;
+    }
+    .title {
+      h2, span {
+        display: inline-block;
+      }
+      span {
+        color: gray;
+        margin-left: 10px;
+      }
+    }
+    .add-to-cart {
+      input {
+          width: 60px;
+      }
+      button {
+          margin-top: 20px;
+      }
+    }
+
+    }
+
+
+.alert {
+  position:absolute;
+  bottom: -120px;
+  border: 5px ridge gold;
+  border-radius: 20px;
+
+}

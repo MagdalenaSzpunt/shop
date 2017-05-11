@@ -1,0 +1,46 @@
+.mini-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+    font-weight: 900;
+}
+
+.price {
+    color: gray;
+}
+
+.available {
+    color: green;
+    margin-left: 10px;
+}
+
+.unavailable {
+    color: red;
+    margin-left: 10px;
+}
+
+@media (min-width: 320px) {
+  .container {
+      margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 961px) {
+  .name {
+    font-size: 24px;
+  }
+  .show-product-button {
+    float: right;
+    margin: -5% 0 0 0;
+  }
+  .price {
+    margin-left: 10px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+
+}
